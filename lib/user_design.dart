@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: BookHistory(
-        title: "Booking Order History",
+        title: "Booking History",
       ),
     );
   }
