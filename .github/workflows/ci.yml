@@ -41,7 +41,7 @@ jobs:
 
       # Step 7: Upload artifacts (downloadable from GitHub Actions tab)
       - name: Upload APK & AAB
-        - uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v4
         with:
           name: flutter-builds
           path: build/app/outputs/flutter-apk/*.apk, build/app/outputs/bundle/release/*.aab
