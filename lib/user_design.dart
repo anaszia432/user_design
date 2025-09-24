@@ -56,11 +56,11 @@ class BookHistoryState extends State<BookHistory> {
                           size: 18,
                         ),
                         style: ButtonStyle(
-                            padding: MaterialStateProperty.all<EdgeInsets>(
+                            padding: WidgetStateProperty.all<EdgeInsets>(
                                 EdgeInsets.only(top: 1)),
-                            foregroundColor: MaterialStateProperty.all<Color>(
+                            foregroundColor: WidgetStateProperty.all<Color>(
                                 Color.fromARGB(255, 247, 241, 241)),
-                            shape: MaterialStateProperty.all<
+                            shape: WidgetStateProperty.all<
                                     RoundedRectangleBorder>(
                                 RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(20.0),
