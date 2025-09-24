@@ -25,23 +25,28 @@ jobs:
       - name: Install dependencies
         run: flutter pub get
 
-      # Step 4: Run analyzer & tests (optional)
+      # Step 4: Run analyzer (optional)
       - name: Analyze
         run: flutter analyze
-      # - name: Run tests
-      #   run: flutter test
 
       # Step 5: Build APK
       - name: Build APK
         run: flutter build apk --release
 
-      # Step 6: Build AAB
+      # Step 6: Build AppBundle (AAB)
       - name: Build AppBundle
         run: flutter build appbundle --release
 
-      # Step 7: Upload artifacts (downloadable from GitHub Actions tab)
-      - name: Upload APK & AAB
+      # Step 7: Upload APK artifact
+      - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: flutter-builds
-          path: build/app/outputs/flutter-apk/*.apk, build/app/outputs/bundle/release/*.aab
+          name: apk
+          path: build/app/outputs/flutter-apk/*.apk
+
+      # Step 8: Upload AAB artifact
+      - name: Upload AAB
+        uses: actions/upload-artifact@v4
+        with:
+          name: aab
+          path: build/app/outputs/bundle/release/*.aab
