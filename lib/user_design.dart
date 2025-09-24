@@ -1,11 +1,5 @@
-import 'dart:ffi';
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:contained_tab_bar_view/contained_tab_bar_view.dart';
-import 'package:dropdown_textfield/dropdown_textfield.dart';
-import 'package:dropdown_textfield/dropdown_textfield.dart';
-import 'package:dropdown_plus/dropdown_plus.dart';
 import 'package:user_design/home_screen.dart';
 
 void main() {
@@ -34,7 +28,6 @@ class BookHistory extends StatefulWidget {
 }
 
 class BookHistoryState extends State<BookHistory> {
-  String? _email;
   bool valuefirst = false;
   TextEditingController email = TextEditingController();
   TextEditingController password = TextEditingController();
@@ -177,7 +170,7 @@ class BookHistoryState extends State<BookHistory> {
                                                               50)),
                                                   labelText: 'Email Id',
                                                   hintText:
-                                                      'Please enter your e-mail here',
+                                                      'Please enter your e-mail here Annas zia',
                                                   prefixIcon: IconButton(
                                                     onPressed: () {},
                                                     icon: Icon(
@@ -190,7 +183,6 @@ class BookHistoryState extends State<BookHistory> {
                                                 ),
                                                 onChanged: (value) {
                                                   setState(() {
-                                                    _email = value.trim();
                                                   });
                                                 },
                                               ),
@@ -230,7 +222,6 @@ class BookHistoryState extends State<BookHistory> {
                                                 ),
                                                 onChanged: (value) {
                                                   setState(() {
-                                                    _email = value.trim();
                                                   });
                                                 },
                                               ),
@@ -290,7 +281,7 @@ class BookHistoryState extends State<BookHistory> {
                                                 child: ElevatedButton(
                                                     style: ButtonStyle(
                                                       backgroundColor:
-                                                          MaterialStateProperty
+                                                          WidgetStateProperty
                                                               .all(Colors.blue),
                                                     ),
                                                     child: Text(

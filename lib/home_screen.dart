@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
-  String? email;
-  String? password;
+  final String? email;
+  final String? password;
 
   HomeScreen({super.key, required this.email, required this.password});
 
