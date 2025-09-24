@@ -366,10 +366,12 @@ class BookHistoryState extends State<BookHistory> {
                                                       SizedBox(
                                                         width: 10,
                                                       ),
-                                                      Text(
-                                                        'Google',
-                                                        style: TextStyle(
-                                                            fontSize: 18),
+                                                      Flexible(
+                                                        child: Text(
+                                                          'Google',
+                                                          style: TextStyle(
+                                                              fontSize: 18),
+                                                        ),
                                                       ),
                                                     ],
                                                   ),
@@ -391,10 +393,12 @@ class BookHistoryState extends State<BookHistory> {
                                                           width: 60,
                                                           image: AssetImage(
                                                               'images/assets/apple.png')),
-                                                      Text(
-                                                        'Apple',
-                                                        style: TextStyle(
-                                                            fontSize: 18),
+                                                      Flexible(
+                                                        child: Text(
+                                                          'Apple',
+                                                          style: TextStyle(
+                                                              fontSize: 18),
+                                                        ),
                                                       ),
                                                     ],
                                                   ),
